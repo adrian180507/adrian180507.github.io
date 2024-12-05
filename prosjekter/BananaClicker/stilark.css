@@ -1,0 +1,17 @@
+html, body {
+
+height: 100%;
+overflow: none;
+
+}
+
+
+header {
+
+justify-content: center;
+align-items: center;
+display: grid;
+background-color: blue;
+height: 10%;
+font-size: larger;
+}
