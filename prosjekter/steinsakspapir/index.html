@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stein, Saks, Papir</title>
+    <link rel="stylesheet" href="stilark.css">
+    <script src="kode.js"></script> 
+</head>
+<body>
+    <h1>Stein, Saks, Papir</h1>
+    
+    <div id="result">Velg et alternativ for å starte spillet!</div>
+
+    <div class="choices">
+        <button onclick="playGame('stein')">🪨 Stein</button>
+        <button onclick="playGame('saks')">✂️ Saks</button>
+        <button onclick="playGame('papir')">📄 Papir</button>
+    </div>
+
+    <div id="score">
+        <p>Spiller: <span id="playerScore">0</span></p>
+        <p>Maskin: <span id="computerScore">0</span></p>
+        <p>Uavgjort: <span id="Uavgjortscore">0</span></p>
+    </div>
+
+    
+</body>
+</html>

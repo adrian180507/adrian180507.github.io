@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #00aeff;
+}
+
+
+.win {
+    background-color: green;
+}
+
+.lose {
+     background-color: red;
+}
+
+.tie {
+    background-color: gray;
+}
+
+
+
+h1 {
+    color: #333;
+}
+
+
+.choices button {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.choices button:hover {
+    background-color: #fb00ff;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#score p {
+    margin: 5px;
+}
+
+
+#result {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #444;
+    transition: color 0.3s;
+}
