@@ -17,7 +17,7 @@ function playGame(playerChoice) {
         result = "ingenvant!";
         Uavgjortscore++;
         resultElement.classList.add("tie");
-        //document.body.style.backgroundColor = white
+        
         
     } else if (
         (playerChoice === 'stein' && computerChoice === 'saks') ||
