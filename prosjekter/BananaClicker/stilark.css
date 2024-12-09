@@ -1,52 +1,37 @@
-html, body {
 
-height: 90%;
-overflow: none;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .cookie {
+            width: 150px;
+            cursor: pointer;
+            margin: 20px auto;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .score {
+            font-size: 24px;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
 
-}
 
-header {
-
-display: grid;
-grid-template-columns: 100px;
-grid-template-rows: 130px;
-background-color: aquamarine;
-font-size: xx-large;
-padding: 0px;
-justify-content: center;
-align-items: center;
-
-}
-
-footer {
-
-display: grid;
-
-}
-
-nav {
-
-display: grid;
-
-}
-
-main {
-
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: 700px;
-justify-content: center;
-align-items: center;
-background-color: blue;
-
-}
-
-p {
-
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: auto;
-justify-content: center;
-align-items: center;
-
-}
+        
+    

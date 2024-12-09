@@ -1,17 +1,23 @@
-// knappen du trykker på
-const button = document.getElementById("Banana")
 
-function HandleClick() {
-    //alert("du trykket på knappen")
-}
+// HTML-elementene
+const banan = document.getElementById("banan");
+const scoreDisplay = document.getElementById("score");
 
-button.addEventListener("click",
-HandleClick
-);
+// variabel for poengsummen
+let score = 0;
 
-// teller hvor mange klikk du har
+// klikkhendelse på cookien
+banan.addEventListener("click", () => {
+    score++; // Øker poengsummen med 1
+    scoreDisplay.textContent = score; // Oppdaterer scoren
+});
 
-const clickCount = document.getElementById("clickCount")
+
+
+
+
+
+
 
 
 
