@@ -7,7 +7,7 @@
             align-items: center;
             justify-content: center;
         }
-        .cookie {
+        .banan {
             width: 150px;
             cursor: pointer;
             margin: 20px auto;
@@ -22,16 +22,13 @@
             justify-content: center;
             align-items: center;
         }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+      
+        
+        h2 {
             display: grid;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            
         }
 
-
-        
     
