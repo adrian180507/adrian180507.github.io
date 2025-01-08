@@ -61,9 +61,9 @@ autoclickerButton.addEventListener("click", () => {
             updateScoreDisplay();
         }, 1000);
     } else if (autoClicker) {
-        infoDisplay.textContent = "Banan factory er allerede aktivert";
+        infoDisplay.textContent = "du har ikke nok bananer";
     } else {
-        infoDisplay.textContent = "Du har ikke nok bananer";
+        infoDisplay.textContent = "Banan factory er allerede aktivert";
     }
 });
 
