@@ -48,8 +48,8 @@ upgradeclicks.addEventListener("click", () => {
 
 // produserer bananer for deg
 autoclickerButton.addEventListener("click", () => {
-    if (score >= 5 && !autoClicker) {
-        score -= 5; // Bruk 5000 poeng for å kjøpe bananafactory
+    if (score >= 500 && !autoClicker) {
+        score -= 500; // Bruk 5000 poeng for å kjøpe bananafactory
         autoClicker = true; // Aktiverer bananafactory
         infoDisplay.textContent = "banan factory aktivert";
         updateScoreDisplay();
