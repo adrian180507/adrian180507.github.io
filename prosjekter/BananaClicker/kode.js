@@ -1,4 +1,3 @@
-
 // HTML-elementene
 const banan = document.getElementById("banan");
 const scoreDisplay = document.getElementById("score");
@@ -11,7 +10,9 @@ const infoDisplay = document.getElementById("infoDisplay")
 let score = 0;
 let poengperclick = 1;
 let autoClicker = false;
-let clickerupgrade = 100
+
+const CLICKER_UPGRADE_COST = 100; // hvor mye det koster å oppgradere
+const AUTOCLICKER_COST = 500
 
 function updateScoreDisplay() {
     document.getElementById("score").innerText = score;
@@ -31,13 +32,13 @@ banan.addEventListener("click", () => {
 
 // oppgradere hvor mange bananer du får per click
 upgradeclicks.addEventListener("click", () => {
-    if (score >= clickerupgrade) {
-        score -= clickerupgrade; // hvor mange poeng opgraderingen koster
+    if (score >= CLICKER_UPGRADE_COST) {
+        score -= CLICKER_UPGRADE_COST; // hvor mange poeng opgraderingen koster
         poengperclick++; // Økt mengde poeng per klikk
         infoDisplay.textContent = `Poeng per klikk: ${poengperclick}`;
         updateScoreDisplay();
     } else {
-        alert("du har ikke nok bananer");
+        infoDisplay.textContent = "Du har ikke nok bananer";
     }
 });
 
@@ -48,23 +49,21 @@ upgradeclicks.addEventListener("click", () => {
 
 // produserer bananer for deg
 autoclickerButton.addEventListener("click", () => {
-    if (score >= 500 && !autoClicker) {
-        score -= 500; // Bruk 5000 poeng for å kjøpe bananafactory
+    if (score >= AUTOCLICKER_COST && !autoClicker) {
+        score -= AUTOCLICKER_COST; // Bruk 500 poeng for å kjøpe bananafactory
         autoClicker = true; // Aktiverer bananafactory
-        infoDisplay.textContent = "banan factory aktivert";
+        infoDisplay.textContent = "Banan factory aktivert";
         updateScoreDisplay();
 
         // Gi 1 banan per sekund
-        setInterval(() => {
-            score++;
+        const autoClickerInterval = setInterval(() => {
+            score += poengperclick;
             updateScoreDisplay();
         }, 1000);
     } else if (autoClicker) {
-        
-        alert("Du har ikke nok poeng for denne oppgraderingen!");
-    }
-    else{  
-        alert("du har allerede en bananfactory");
+        infoDisplay.textContent = "Banan factory er allerede aktivert";
+    } else {
+        infoDisplay.textContent = "Du har ikke nok bananer";
     }
 });
 
