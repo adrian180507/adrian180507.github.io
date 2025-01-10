@@ -36,6 +36,8 @@ padding: 10px;
     background-color: #f1f1f1;
     justify-content: center;
     align-items: center;
+    max-height: max-content;
+    max-width: max-content;
 
   }
 
