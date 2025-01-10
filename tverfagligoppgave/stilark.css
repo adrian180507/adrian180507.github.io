@@ -1,0 +1,11 @@
+
+
+
+.grid-container {
+
+grid-template-areas: 
+'header header header header header'
+
+;
+
+}
