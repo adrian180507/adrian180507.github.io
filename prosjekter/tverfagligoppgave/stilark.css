@@ -4,6 +4,7 @@
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 .item6 { grid-area: quiz; }
+.item7 { grid-area: game; }
 
 
 .grid-container {
@@ -12,6 +13,7 @@ grid-template-areas:
 'header header header header header'
 'menu main main right right'
 'menu quiz quiz right right'
+'menu game game right right'
 'menu footer footer footer footer';
 
 display: grid;
@@ -39,11 +41,7 @@ padding: 10px;
     align-items: center;
    width: 100%;
    height: 100%;
+   text-align: center;
 
   }
 
-  header {
-
-text-align: center;
-
-  }
