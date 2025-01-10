@@ -9,7 +9,8 @@
 
 grid-template-areas: 
 'header header header header header'
-'menu main main main right'
+'menu main main right right'
+'menu main main right right'
 'menu footer footer footer footer';
 
 display: grid;
@@ -35,4 +36,5 @@ padding: 10px;
     background-color: #f1f1f1;
     justify-content: center;
     align-items: center;
+
   }
