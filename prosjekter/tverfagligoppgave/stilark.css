@@ -45,3 +45,11 @@ padding: 10px;
 
   }
 
+
+  :right {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: top;
+  }
