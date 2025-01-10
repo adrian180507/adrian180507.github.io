@@ -1,7 +1,8 @@
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
-.item4 { grid-area: footer; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
 
 .grid-container {
@@ -10,5 +11,10 @@ grid-template-areas:
 'header header header header header'
 'menu main main main right'
 'menu footer footer footer footer';
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+gap: 10px;
 
 }
