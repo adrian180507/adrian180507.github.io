@@ -12,8 +12,7 @@
 grid-template-areas: 
 'header header header header header'
 'menu main main right right'
-'menu quiz quiz right right'
-'menu game game right right'
+'menu quiz quiz game game'
 'menu footer footer footer footer';
 
 display: grid;
