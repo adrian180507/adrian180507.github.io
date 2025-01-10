@@ -3,6 +3,7 @@
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
+.item6 { grid-area: quiz; }
 
 
 .grid-container {
@@ -10,7 +11,7 @@
 grid-template-areas: 
 'header header header header header'
 'menu main main right right'
-'menu main main right right'
+'menu quiz quiz right right'
 'menu footer footer footer footer';
 
 display: grid;
