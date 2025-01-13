@@ -1,10 +1,9 @@
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-.item6 { grid-area: quiz; }
-.item7 { grid-area: game; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+.item5 { grid-area: quiz; }
+.item6 { grid-area: game; }
 
 
 .grid-container {
