@@ -1,6 +1,6 @@
 .item1 { grid-area: header; }
 .item2 { grid-area: main; }
-.item3 { grid-area: right; }
+.item3 { grid-area: menu; }
 .item4 { grid-area: footer; }
 .item5 { grid-area: quiz; }
 .item6 { grid-area: game; }
@@ -9,9 +9,9 @@
     display: grid;
     grid-template-areas: 
         'header header header header header'
-        'main quiz quiz right right'
-        'main game game right right'
-        'main footer footer footer footer';
+        'menu quiz quiz main main'
+        'menu game game main main'
+        'menu footer footer footer footer';
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 20px;
