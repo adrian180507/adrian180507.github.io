@@ -25,7 +25,7 @@ def send_request():
     while not stop_threads:
         response = requests.get('http://localhost:3000')
         print(response.status_code)
-        time.sleep(1)  # Sov i 1 sekund mellom kvar førespurnad
+        time.sleep(0.5)  # Sov i 1 sekund mellom kvar førespurnad
 
 # Opprett og start trådar
 threads = []
