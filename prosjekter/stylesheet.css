@@ -4,3 +4,9 @@ body {
     padding: 10px;
     display: grid;
 }
+
+a[href="/index.html"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

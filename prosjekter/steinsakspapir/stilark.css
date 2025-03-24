@@ -54,3 +54,9 @@ h1 {
     color: #444;
     transition: color 0.3s;
 }
+
+#Tilbake {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

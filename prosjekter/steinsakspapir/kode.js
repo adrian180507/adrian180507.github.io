@@ -39,3 +39,10 @@ function playGame(playerChoice) {
     document.getElementById("computerScore").innerText = computerScore;
     document.getElementById("Uavgjortscore").innerText = Uavgjortscore;
 }
+
+
+// knapp for å gå tilbake til hovedmenyen
+const Tilbake = document.getElementById("Tilbake");
+Tilbake.addEventListener("click", () => {
+    window.location.href = "../prosjekt.html";
+});

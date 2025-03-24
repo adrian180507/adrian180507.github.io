@@ -68,7 +68,11 @@ autoclickerButton.addEventListener("click", () => {
 });
 
 
-
+// knapp for å gå tilbake til hovedmenyen
+const tilbake = document.getElementById("tilbake");
+tilbake.addEventListener("click", () => {
+    window.location.href = "../prosjekt.html";
+});
 
 
 
